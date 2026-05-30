@@ -310,6 +310,11 @@ nav {
     padding-top: 20px;
     text-align: center;
 }
+
+.FooterBrand p {
+    max-width: 25rem; /*zin op 2 lijnen ipv één*/
+}
+
 /*Chatbutton*/
 .ChatButton {
     position: fixed;

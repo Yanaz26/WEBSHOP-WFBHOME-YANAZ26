@@ -104,7 +104,11 @@ body {
     border-color: #e28f3c;
     Outline: none; /* Verwijder standaard focus outline zwart */
 }
-
+.ContactForm textarea:focus
+{
+    border-color: #e28f3c;
+    Outline: none; /* Verwijder standaard focus outline zwart */
+}
 
 .ContactForm button {
     background-color: #C6A27E;
@@ -114,8 +118,6 @@ body {
     border-radius: 10px;
     font-weight: 500;
 }
-
-
 
 
 /* Menu horizontaal zetten */
@@ -238,6 +240,10 @@ nav {
     margin-top: 40px;
     padding-top: 20px;
     text-align: center;
+}
+
+.FooterBrand p {
+    max-width: 25rem; /*zin op 2 lijnen ipv één*/
 }
 
 /*Chatbutton*/
