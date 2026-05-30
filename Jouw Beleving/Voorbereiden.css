@@ -5,6 +5,7 @@ body {
     color: #3A2F2A;
 }
 
+
 /*Headers*/
 
 .Voorbereiden-Header {
@@ -56,7 +57,7 @@ body {
 /*Services Sectie alle pagina's*/
 
 .Services {
-    padding: 80px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 
@@ -83,7 +84,7 @@ body {
 
 .next-step {
     text-align: center;
-    padding: 60px;
+    padding: 20px;
 }
 
 .btn {
@@ -101,31 +102,8 @@ body {
     align-items: center;
     padding: 0 10%;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 20px;
 }
-
-
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(58, 47, 42, 0.75);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    text-align: center;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    overflow-y: auto; /*scrollen binnen ontharing*/
-}
-
 
 .service:hover .overlay {
     opacity: 1;
@@ -142,17 +120,33 @@ body {
     border-radius: 15px;
 
 }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 47, 42, 0.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start van de overlay */
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /*scrollen binnen ontharing*/
+}
+
 
 /* Selectie + effect bij selectie*/
 .service-foto input:checked + .service {
     border: 5px solid #e57608;
-    box-shadow: 0 0 25px rgba(198,162,126,0.5);
-    transform: scale(1.03);
+    
 }
 
-.service:hover img {
-    transform: scale(1.08);
-}
 
 .overlay h3 {
   
@@ -171,20 +165,13 @@ body {
     font-weight: bold;
     color: #F5D18E;
 }
-
+/*Subservices binnen ontharing*/
 .sub-services {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
-/* Verbergen scrollbar binnen overlay onrharing */
-.overlay::-webkit-scrollbar {
-    display: none;
-}
-
-/*Subservices binnen ontharing*/
 .sub-services label {
     background: rgba(255,255,255,0.15);
     font-size: 1rem;
@@ -192,13 +179,17 @@ body {
     border-radius: 10px;
 
 }
-
 .sub-services label:hover {
     background: rgba(255,255,255,0.3);
 }
 /*Afstand tussen checkboxen en tekst binnen subservices*/
 .sub-services input {
     margin-right: 10px;
+}
+
+/* Verbergen scrollbar binnen overlay onrharing */
+.overlay::-webkit-scrollbar {
+    display: none;
 }
 
 /* Menu horizontaal zetten */
@@ -226,8 +217,6 @@ body {
 }
 
 /* Navigatiebalk */
-
-
 /* Positionering navigatiebalk */
 nav {
 
@@ -315,7 +304,7 @@ nav {
     color: #C6A27E;
 }
 
-.FooterAllRightsReserved {
+.FooterHowest {
     border-top: 1px solid rgba(255,255,255,0.2);
     margin-top: 40px;
     padding-top: 20px;

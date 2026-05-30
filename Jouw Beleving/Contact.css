@@ -10,7 +10,6 @@ body {
     background: 
         linear-gradient(rgba(58,47,42,0.55), rgba(58,47,42,0.55)),
         url('../Images/See.jpg') center/cover no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +34,7 @@ body {
     padding: 80px 10%;
     display: grid;
     grid-template-columns: 1fr ;
-    gap: 60px;
+    gap: 40px;
 }
 
 .ContactInfo
@@ -102,7 +101,8 @@ body {
 /* Border wordt oranje bij klikken */
 .ContactForm input:focus
 {
-    border-color: #C6A27E;
+    border-color: #e28f3c;
+    Outline: none; /* Verwijder standaard focus outline zwart */
 }
 
 

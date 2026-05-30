@@ -47,7 +47,7 @@ body {
 }
 
 .Reis h2 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-size: 4rem;
     margin-top: 10px;
 }
@@ -55,19 +55,17 @@ body {
 /* De verschillende stappen*/
 .stap {
 
-  flex: 1 1 220px; /* Flex-grow, flex-shrink, basis */
-  max-width: 250px; /* Max breedte van elk blok */
+    flex: 1 1 220px; /* Flex-grow, flex-shrink, basis */
+    max-width: 250px; /* Max breedte van elk blok */
     height: min(100%, 100%);
     text-align: center;
     text-decoration: none;  /* Verwijder onderstreping van links */
     color: inherit;         /* Behoud de tekstkleur */
-    display: block; /* Zorgt ervoor dat de hele stap klikbaar is */
-    transition: transform 0.3s ease; /* Voor een kleine zoom bij het hoveren */
-
 }
 
 .stap:hover {
     transform: scale(1.05); /* Zoom in bij hoveren */
+    transition: transform 0.3s ease; /* Voor een smooth transitie, aders is het te snel*/
 }
 .stap img {
     width: 100%;
@@ -83,7 +81,7 @@ body {
     align-items: center;
     width: min(100%, 100%);
     height: min(30%, 30%);
-   margin-bottom: 10px;
+    margin-bottom: 10px;
     padding-top: 1px;
 }
 
@@ -101,7 +99,6 @@ body {
 html {
     scroll-behavior: smooth;/* Smoothe scroll bij klikken*/
 }
-
 
 
 /* Menu horizontaal zetten */
