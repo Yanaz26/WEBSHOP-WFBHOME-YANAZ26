@@ -321,3 +321,21 @@ nav {
     padding-top: 20px;
     text-align: center;
 }
+/*Chatbutton*/
+.ChatButton {
+    position: fixed;
+    right: 30px;
+    bottom: 30px; /* Plaats de knop rechtsonder op het scherm */
+    width: 60px;
+    height: 30px;
+    background-color: #C6A27E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+
+}
