@@ -1,0 +1,267 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F3EF;
+    color: #3A2F2A;
+}
+
+/* Homepagina Header */
+.Homepage {
+    min-height: 100vh;
+    background: linear-gradient(rgba(58, 47, 42, 0.5), rgba(58, 47, 42, 0.5)), url(Images/See.jpg) center/cover no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Homepagina Content*/
+.Homepage h1 {
+    font-family: serif;
+    font-size: 4rem;
+}
+
+.HP-content {
+    color: rgb(245, 209, 142);
+}
+
+.HP-content p{
+    font-size: 1.5rem;
+    margin-top: 20px; /* Marge tussen de tekst en de button */
+}
+
+.Homepage button {
+    background-color: #C6A27E;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+
+}
+
+/* Beleving */
+.Reis {
+    padding: 20px 20px 60px 20px;
+    text-align: center;
+}
+
+.Reis h2 {
+    margin-bottom: 100px;
+    font-size: 4rem;
+    margin-top: 10px;
+}
+
+/* De verschillende stappen*/
+.stap {
+
+  flex: 1 1 220px; /* Flex-grow, flex-shrink, basis */
+  max-width: 250px; /* Max breedte van elk blok */
+    height: min(100%, 100%);
+    text-align: center;
+    text-decoration: none;  /* Verwijder onderstreping van links */
+    color: inherit;         /* Behoud de tekstkleur */
+    display: block; /* Zorgt ervoor dat de hele stap klikbaar is */
+    transition: transform 0.3s ease; /* Voor een kleine zoom bij het hoveren */
+
+}
+
+.stap:hover {
+    transform: scale(1.05); /* Zoom in bij hoveren */
+}
+.stap img {
+    width: 100%;
+    height: 500px; /*Hoogte blocks fotos*/
+    border-radius: 10px;
+    object-fit: cover; /*Vulling van de container met foto*/
+}
+
+#flex-container-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: min(100%, 100%);
+    height: min(30%, 30%);
+   margin-bottom: 10px;
+    padding-top: 1px;
+}
+
+/*Btn om naar beneden te scrollen*/
+.btn {
+    background-color: #C6A27E;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/*Scroll behavior button*/
+html {
+    scroll-behavior: smooth;/* Smoothe scroll bij klikken*/
+}
+
+
+
+/* Menu horizontaal zetten */
+.menu {
+    list-style: none; /* Verwijder standaard lijststijl */
+    display: flex;/* Gebruik flexbox voor horizontale uitlijning */
+    justify-content: center; /* Centreer de menu-items */
+    gap: 80px; /* Ruimte tussen menu-items */
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.592);
+    border-radius: 10px;
+}
+
+
+/* Links stijl*/
+.menu a {
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+} 
+
+/* Hover effect */
+.menu a:hover {
+    color: #ff9500;
+}
+
+/* Navigatiebalk */
+nav {
+    background-color: none;
+    padding: 10px 0;
+}
+/* Positionering navigatiebalk */
+nav {
+    position: absolute; /* Absolute positionering voor bovenaan de pagina */
+    top: 20px;
+    width: 100%;
+    display: flex; /* Flexbox gebruiken voor centreren */
+    justify-content: center;
+    z-index: 1000; /* Zorgt ervoor dat de navigatie boven andere elementen ligt */
+}
+
+/* Toon dropdown bij hover */
+.dropdownbeleving:hover .submenu {
+    display: block;
+}
+
+/* Positionering submenu*/
+.dropdownbeleving {
+    position: relative;
+}
+
+.submenu {
+    display: none; /* Verberg het submenu standaard */
+    position: absolute;
+
+
+    background-color: rgba(0, 0, 0, 0.592);
+    list-style: none; 
+
+    padding: 10px 0; /* Padding binnen het submenu */
+    margin: 0%; /*marge tussen submenu en hoofdmenu*/
+
+    min-width: 180px; /* Minimum breedte van het submenu */
+    border-radius: 10px;
+}
+
+
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Hover effect submenu*/
+.submenu a:hover {
+    color: #d4b483;
+}
+
+/*Footer*/
+.Footer {
+    background-color: #3A2F2A;
+    color: white;
+    padding: 60px 10% 20px;
+}
+
+.FooterContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr; /* Verdeling kolommen met fr-eenheden 1fr = 1 kolom */
+    gap: 40px;
+}
+
+.FooterContent h2{
+    color: #F5D18E;
+    margin-bottom: 15px;
+}
+
+.Footer h3 {
+    color: #F5D18E;
+    margin-bottom: 15px;
+}
+
+.Footer p{
+    color: #F7F3EF;
+    font-size: 0.95rem;
+}
+.Footer a {
+    color: #F7F3EF;
+    font-size: 0.95rem;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+/* Hover effect footer enkel voor de elementen met links*/
+.Footer a:hover {
+    color: #C6A27E;
+}
+
+.FooterHowest {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.ChatButton {
+    position: fixed;
+    right: 30px;
+    bottom: 30px; /* Plaats de knop rechtsonder op het scherm */
+    width: 60px;
+    height: 30px;
+    background-color: #C6A27E;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+
+}
+
+@media (max-width: 800px) /* Responsieve aanpassingen voor kleinere schermen Media Queries*/
+{
+   
+     .Homepage h1 {
+        font-size: 3rem;
+    }
+
+    .Reis h2 {
+        font-size: 2.5rem;
+    }
+
+    .stap img {
+        height: 350px;
+    }
+
+
+}

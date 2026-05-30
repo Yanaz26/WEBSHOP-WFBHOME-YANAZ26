@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    background-color: #F7F3EF;
+    color: #3A2F2A;
+}
+
+/*Headers*/
+
+.Voorbereiden-Header {
+    height: 50vh;
+    background: linear-gradient(rgba(58,47,42,0.5), rgba(58,47,42,0.5)),
+                url('images/VoorbereidenHeader.jpg') center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.Verfijnen-Header {
+    height: 50vh;
+    background: linear-gradient(rgba(58,47,42,0.5), rgba(58,47,42,0.5)),
+                url('images/VerfijnenHeader.jpg') center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.Ontspannen-Header {
+    height: 50vh;
+    background: linear-gradient(rgba(58,47,42,0.5), rgba(58,47,42,0.5)),
+                url('images/OntspannenHeader.jpg') center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.Afwerken-Header {
+    height: 50vh;
+    background: linear-gradient(rgba(58,47,42,0.5), rgba(58,47,42,0.5)),
+                url('images/AfwerkenHeader.jpg') center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/*Services Sectie alle pagina's*/
+
+.Services {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.Services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+    display: block;
+}
+
+.service h3 {
+    margin-top: 10px;
+}
+
+.next-step {
+    text-align: center;
+    padding: 60px;
+}
+
+.btn {
+    background-color: #C6A27E;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-navigatie {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 47, 42, 0.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /*scrollen binnen ontharing*/
+}
+
+
+.service:hover .overlay {
+    opacity: 1;
+}
+
+.service-foto input {
+    display: none;
+}
+
+.service {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+
+/* Selectie + effect bij selectie*/
+.service-foto input:checked + .service {
+    border: 5px solid #e57608;
+    box-shadow: 0 0 25px rgba(198,162,126,0.5);
+    transform: scale(1.03);
+}
+
+.service:hover img {
+    transform: scale(1.08);
+}
+
+.overlay h3 {
+  
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.overlay p {
+
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.overlay span {
+
+    font-weight: bold;
+    color: #F5D18E;
+}
+
+.sub-services {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Verbergen scrollbar binnen overlay onrharing */
+.overlay::-webkit-scrollbar {
+    display: none;
+}
+
+/*Subservices binnen ontharing*/
+.sub-services label {
+    background: rgba(255,255,255,0.15);
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 10px;
+
+}
+
+.sub-services label:hover {
+    background: rgba(255,255,255,0.3);
+}
+/*Afstand tussen checkboxen en tekst binnen subservices*/
+.sub-services input {
+    margin-right: 10px;
+}
+
+/* Menu horizontaal zetten */
+.menu {
+    list-style: none; /* Verwijder standaard lijststijl */
+    display: flex;/* Gebruik flexbox voor horizontale uitlijning */
+    justify-content: center; /* Centreer de menu-items */
+    gap: 80px; /* Ruimte tussen menu-items */
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.592);
+    border-radius: 10px;
+}
+
+
+/* Links stijl*/
+.menu a {
+    color: white;
+        font-size: 1.25rem;
+    text-decoration: none;
+} 
+
+/* Hover effect */
+.menu a:hover {
+    color: #ff9500;
+}
+
+/* Navigatiebalk */
+
+
+/* Positionering navigatiebalk */
+nav {
+
+    padding: 10px 0;   
+    position: absolute; /* Absolute positionering voor bovenaan de pagina */
+    top: 20px;
+    width: 100%;
+    display: flex; /* Flexbox gebruiken voor centreren */
+    justify-content: center;
+    z-index: 1000; /* Zorgt ervoor dat de navigatie boven andere elementen ligt */
+}
+
+/* Toon dropdown bij hover */
+.dropdownbeleving:hover .submenu {
+    display: block;
+}
+
+/* Positionering submenu*/
+.dropdownbeleving {
+    position: relative;
+}
+
+.submenu {
+    display: none; /* Verberg het submenu standaard */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.592);
+    list-style: none; 
+    padding: 10px 0; /* Padding binnen het submenu */
+    min-width: 180px; /* Minimum breedte van het submenu */
+    border-radius: 10px;
+}
+
+
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Hover effect submenu*/
+.submenu a:hover {
+    color: #d4b483;
+}
+
+/*Footer*/
+.Footer {
+    background-color: #3A2F2A;
+    color: white;
+    padding: 60px 10% 20px;
+}
+
+.FooterContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr; /* Verdeling kolommen met fr-eenheden 1fr = 1 kolom */
+    gap: 40px;
+}
+
+.FooterContent h2{
+    color: #F5D18E;
+    margin-bottom: 15px;
+}
+
+.Footer h3 {
+    color: #F5D18E;
+    margin-bottom: 15px;
+}
+
+.Footer p{
+    color: #F7F3EF;
+    font-size: 0.95rem;
+}
+.Footer a {
+    color: #F7F3EF;
+    font-size: 0.95rem;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+/* Hover effect footer enkel voor de elementen met links*/
+.Footer a:hover {
+    color: #C6A27E;
+}
+
+.FooterAllRightsReserved {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+}
