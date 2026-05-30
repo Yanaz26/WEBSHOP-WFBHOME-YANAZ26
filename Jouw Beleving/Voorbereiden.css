@@ -328,3 +328,64 @@ nav {
     text-decoration: none;
 
 }
+
+@media (max-width: 800px) /* Responsieve aanpassingen voor kleinere schermen Media Queries*/
+{
+   
+
+     .menu{
+        gap: 30px;
+        position: fixed;
+        padding: 80px 80px 20px 80px;
+        margin-top: 0px;
+
+    }
+
+     nav {
+        top: 0;
+        left: 0;
+    }
+
+     .Voorbereiden-Header-content p, .Verfijnen-Header-content p, .Ontspannen-Header-content p, .Afwerken-Header-content p {
+        padding: 0 20px;
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+     .Voorbereiden-Header-content h1, .Verfijnen-Header-content h1, .Ontspannen-Header-content h1, .Afwerken-Header-content h1 {
+        padding: 0 20px;
+        font-size: 1.8rem;
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+
+     .Services-grid {
+        grid-template-columns: 1fr;
+    }
+
+     .btn-navigatie {
+        display: none;
+    }
+
+     .ChatButton {
+        display: none;
+    }
+
+     .FooterContent {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+     .FooterBrand {
+        text-align: left;
+    }
+
+     .FooterBrand p {
+        padding: 0px 0px 0px;
+    }
+
+     .FooterContent p {
+        padding: 0px 0px 0px;
+    }
+
+
+}

@@ -248,18 +248,38 @@ nav {
 
 @media (max-width: 800px) /* Responsieve aanpassingen voor kleinere schermen Media Queries*/
 {
-   
+     .menu{
+        gap: 30px;
+    } 
      .Homepage h1 {
-        font-size: 3rem;
-    }
-
-    .Reis h2 {
         font-size: 2.5rem;
     }
 
-    .stap img {
-        height: 350px;
+     .Homepage p {
+        font-size: 1.5rem;
+    }
+     .Reis h2 {
+        font-size: 1.5rem;
+    }
+     .stap img {
+        height: 100px;
     }
 
+     .FooterContent {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+     .FooterBrand {
+        text-align: left;
+    }
+
+     .FooterBrand p {
+        padding: 0px 0px 0px;
+    }
+
+     .FooterContent p {
+        padding: 0px 0px 0px;
+    }
 
 }

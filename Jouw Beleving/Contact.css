@@ -260,12 +260,51 @@ nav {
 }
 /* Responsive */
 @media (max-width: 800px) {
+
+       .menu{
+        gap: 30px;
+     }
+
+     .Contact-Header-Content h1, p {
+        padding: 0 20px;
+        font-size: 2.5rem;
+     }
+
+     .Services-grid {
+    grid-template-columns: 1fr;
+     }
+
     .Contact-Sectie {
         grid-template-columns: 1fr;
         padding: 50px 20px;
     }
 
-    .ContactHeader h1 {
-        font-size: 2.3rem;
+    .ContactInfo h2{
+
+        font-size: 1.7rem;
     }
+
+    .ContactInfo p {
+        font-size: 1.2rem;
+        padding: 0px 0px 0px;
+    }
+
+      .FooterContent {
+        grid-template-columns: 1fr;
+        gap: 10px;
+     }
+
+     .FooterBrand {
+        text-align: left;
+     }
+
+     .FooterBrand p {
+        padding: 0px 0px 0px;
+     }
+
+     .FooterContent p {
+        padding: 0px 0px 0px;
+     }
+
 }
+
